@@ -7,7 +7,7 @@ package dm
 import (
 	"strconv"
 
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 const (

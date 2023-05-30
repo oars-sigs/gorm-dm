@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"gormdm/dm/i18n"
+	"pkg.oars.vip/gorm-dm/dm/i18n"
 )
 
 // 驱动级错误

@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"time"
 
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 type logFilter struct{}

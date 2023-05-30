@@ -32,13 +32,13 @@ func (x *ecbEncrypter) BlockSize() int { return x.blockSize }
 
 func (x *ecbEncrypter) CryptBlocks(dst, src []byte) {
 	if len(src)%x.blockSize != 0 {
-		panic("gormdm/dm/security: input not full blocks")
+		panic("pkg.oars.vip/gorm-dm/dm/security: input not full blocks")
 	}
 	if len(dst) < len(src) {
-		panic("gormdm/dm/security: output smaller than input")
+		panic("pkg.oars.vip/gorm-dm/dm/security: output smaller than input")
 	}
 	if InexactOverlap(dst[:len(src)], src) {
-		panic("gormdm/dm/security: invalid buffer overlap")
+		panic("pkg.oars.vip/gorm-dm/dm/security: invalid buffer overlap")
 	}
 	for bs, be := 0, x.blockSize; bs < len(src); bs, be = bs+x.blockSize, be+x.blockSize {
 		x.b.Encrypt(dst[bs:be], src[bs:be])
@@ -55,13 +55,13 @@ func (x *ecbDecrypter) BlockSize() int { return x.blockSize }
 
 func (x *ecbDecrypter) CryptBlocks(dst, src []byte) {
 	if len(src)%x.blockSize != 0 {
-		panic("gormdm/dm/security: input not full blocks")
+		panic("pkg.oars.vip/gorm-dm/dm/security: input not full blocks")
 	}
 	if len(dst) < len(src) {
-		panic("gormdm/dm/security: output smaller than input")
+		panic("pkg.oars.vip/gorm-dm/dm/security: output smaller than input")
 	}
 	if InexactOverlap(dst[:len(src)], src) {
-		panic("gormdm/dm/security: invalid buffer overlap")
+		panic("pkg.oars.vip/gorm-dm/dm/security: invalid buffer overlap")
 	}
 	for bs, be := 0, x.blockSize; bs < len(src); bs, be = bs+x.blockSize, be+x.blockSize {
 		x.b.Decrypt(dst[bs:be], src[bs:be])

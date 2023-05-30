@@ -13,7 +13,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"gormdm/dm/security"
+	"pkg.oars.vip/gorm-dm/dm/security"
 )
 
 const (

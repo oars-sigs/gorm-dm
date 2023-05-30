@@ -15,7 +15,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 type ExecuteTypeEnum int

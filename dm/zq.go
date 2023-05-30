@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 const (

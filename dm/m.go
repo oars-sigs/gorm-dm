@@ -13,8 +13,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"gormdm/dm/parser"
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/parser"
+	"pkg.oars.vip/gorm-dm/dm/util"
 
 	"golang.org/x/text/encoding"
 )

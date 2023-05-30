@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 const (

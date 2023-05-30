@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	_ "gormdm/dm"
+	_ "pkg.oars.vip/gorm-dm/dm"
 
 	"gorm.io/gorm" // 引入gorm v2包
 	"gorm.io/gorm/callbacks"

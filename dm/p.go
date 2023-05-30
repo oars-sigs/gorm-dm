@@ -10,7 +10,7 @@ import (
 	"database/sql/driver"
 	"sync"
 
-	"gormdm/dm/i18n"
+	"pkg.oars.vip/gorm-dm/dm/i18n"
 )
 
 // 发版标记

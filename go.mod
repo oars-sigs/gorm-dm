@@ -1,4 +1,4 @@
-module gormdm
+module pkg.oars.vip/gorm-dm
 
 go 1.19
 

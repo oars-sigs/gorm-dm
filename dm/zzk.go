@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gormdm/dm/parser"
-	"gormdm/dm/util"
+	"pkg.oars.vip/gorm-dm/dm/parser"
+	"pkg.oars.vip/gorm-dm/dm/util"
 )
 
 func (dc *DmConnection) lex(sql string) ([]*parser.LVal, error) {
